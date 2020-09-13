@@ -1,0 +1,14 @@
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+server:
+  port: 8000
+management:
+  endpoints:
+    exposure:
+      include: "*"
+  endpoint:
+    health:
+      show-details: always
