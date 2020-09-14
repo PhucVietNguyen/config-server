@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: anhphuc1996
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: oauth2_db
+    hibernate:
+      ddl-auto: update
+server:
+  servlet:
+    context-path: /uaa
+  port: 8100
+management:
+  endpoints:
+    exposure:
+      include: "*"
+  endpoint:
+    health:
+      show-details: always
