@@ -1,8 +1,8 @@
 zuul:
   ignoredServices: '*'
   host:
-    connect-timeout-millis: 20000
-    socket-timeout-millis: 20000
+    connect-timeout-millis: 60000
+    socket-timeout-millis: 60000
   routes:
     oauth-service:
       serviceId: oauth-service
