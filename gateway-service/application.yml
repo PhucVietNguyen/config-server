@@ -19,6 +19,12 @@ zuul:
       url: product-service #which url the request will e mapped to
       stripPrefix: false #if zuul should replace the "/uaa/" segment
       sensitiveHeaders:
+    report-service:
+      serviceId: report-service
+      path: /report/** #path that will be intercepted
+      url: report-service #which url the request will e mapped to
+      stripPrefix: false #if zuul should replace the "/uaa/" segment
+      sensitiveHeaders:
 server:
   port: 8000
 management:
