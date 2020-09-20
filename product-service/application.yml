@@ -30,7 +30,7 @@ spring:
 security:
   oauth2:
     resource:
-      token-info-uri: http://localhost:8000/uaa/oauth/check_token
+      token-info-uri: http://localhost:8100/uaa/oauth/check_token
     client:
       client-id: CLIENT_ID
       client-secret: password
