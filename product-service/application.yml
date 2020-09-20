@@ -31,6 +31,7 @@ security:
   oauth2:
     resource:
       token-info-uri: http://localhost:8100/uaa/oauth/check_token
+      user-info-uri: http://localhost:8080/uaa/user/current
     client:
       client-id: CLIENT_ID
       client-secret: password
