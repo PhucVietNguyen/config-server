@@ -33,5 +33,6 @@ security:
       token-info-uri: http://localhost:8100/uaa/oauth/check_token
       user-info-uri: http://localhost:8100/uaa/user/current
     client:
-      client-id: CLIENT_ID
+      client-id: CLIENT_PRODUCT_ID
       client-secret: password
+resource-id: product_id
