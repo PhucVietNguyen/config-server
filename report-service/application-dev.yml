@@ -12,4 +12,4 @@ security:
       clientSecret: password
       accessTokenUri: http://localhost:8100/uaa/oauth/token
       grant-type: client_credentials
-      scope: read,write
+#      scope: read,write
