@@ -27,5 +27,5 @@ spring:
       hibernate.generate_statistics: false
       hibernate.cache.region.factory_class: org.hibernate.cache.internal.NoCachingRegionFactory
       hibernate.jdbc.lob.non_contextual_creation: true
-check-user-scopes: true
+check-user-scopes: false
 signing-key: ewjk@837@$#^.8$
