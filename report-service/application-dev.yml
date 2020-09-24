@@ -11,5 +11,5 @@ security:
       clientId: report-service
       clientSecret: password
       accessTokenUri: http://localhost:8100/uaa/oauth/token
-#      grant-type: client_credentials
+      grant-type: client_credentials
 #      scope: role_user,role_admin
