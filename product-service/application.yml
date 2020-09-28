@@ -35,4 +35,4 @@ security:
 #    client:
 #      client-id: CLIENT_PRODUCT_ID
 #      client-secret: password
-resource-id: product_id
+resource-id: product
