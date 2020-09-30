@@ -4,7 +4,7 @@ server:
   port: 8200
 spring:
   datasource:
-    url: jdbc:postgresql://postgres:5432/product_db?currentSchema=product
+    url: jdbc:postgresql://localhost:5432/product_db?currentSchema=product
     name: product_service
     username: postgres
     password: anhphuc1996
