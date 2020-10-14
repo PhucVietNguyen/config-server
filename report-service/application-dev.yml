@@ -11,6 +11,8 @@ security:
       clientId: product-service
       clientSecret: password
       accessTokenUri: http://localhost:8100/uaa/oauth/token
-      userAuthorizationUri: http://localhost:8100/uaa/oauth/authorize
       grant-type: client_credentials
-#      scope: role_user,role_admin
+      scope: read
+feign:
+  hystrix:
+    enabled: true
