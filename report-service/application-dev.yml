@@ -8,7 +8,7 @@ eureka:
 security:
   oauth2:
     client:
-      clientId: report-service
+      clientId: product-service
       clientSecret: password
       accessTokenUri: http://localhost:8100/uaa/oauth/token
       grant-type: client_credentials
