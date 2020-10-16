@@ -4,7 +4,7 @@ server:
   port: 8200
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/product_db?currentSchema=product
+    url: jdbc:postgresql://postgres:5432/product_db?currentSchema=product
     name: product_service
     username: postgres
     password: anhphuc1996
@@ -30,9 +30,6 @@ spring:
 security:
   oauth2:
     resource:
-      token-info-uri: http://localhost:8000/uaa/oauth/check_token
-      user-info-uri: http://localhost:8000/uaa/user/current
-#    client:
-#      client-id: CLIENT_PRODUCT_ID
-#      client-secret: password
+      token-info-uri: http://gateway-service:8000/uaa/oauth/check_token
+      user-info-uri: http://gateway-service:8000/uaa/user/current
 resource-id: product

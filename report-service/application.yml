@@ -5,6 +5,6 @@ server:
 security:
   oauth2:
     resource:
-      token-info-uri: http://localhost:8000/uaa/oauth/check_token
-      user-info-uri: http://localhost:8000/uaa/user/current
+      token-info-uri: http://gateway-service:8000/uaa/oauth/check_token
+      user-info-uri: http://gateway-service:8000/uaa/user/current
 resource-id: report
