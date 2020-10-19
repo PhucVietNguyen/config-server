@@ -10,7 +10,7 @@ security:
     client:
       clientId: product-service
       clientSecret: password
-      accessTokenUri: http://localhost:8100/uaa/oauth/token
+      accessTokenUri: http://oauth-service:8100/uaa/oauth/token
 #      grant-type: authorization_code,password,refresh_token,implicit
 #      scope: read,write
 

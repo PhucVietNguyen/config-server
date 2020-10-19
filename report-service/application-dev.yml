@@ -8,11 +8,11 @@ eureka:
 security:
   oauth2:
     client:
-      clientId: product-service
+      clientId: report-service
       clientSecret: password
       accessTokenUri: http://oauth-service:8100/uaa/oauth/token
       grant-type: client_credentials
-      scope: read
+      scope: read,write
 feign:
   hystrix:
     enabled: true
