@@ -4,28 +4,18 @@ server:
   port: 8100
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=netflix_db
-    name: auth_service
-    username: postgres
-    password: anhphuc1996
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:mariadb://localhost:3306/oauth2
     tomcat:
-      max-wait: 10000
-      max-active: 50
-      test-on-borrow: true
+      connection-properties: useUnicode=true;characterEncoding=utf-8;
+    driver-class-name: org.mariadb.jdbc.Driver
+    password: root
+    username: root
   jpa:
-    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
-    openInView: false
-    show_sql: true
-    generate-ddl: false
     hibernate:
-      ddl-auto: none
-      naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
+      ddl-auto: update
+    show-sql: true
     properties:
-      hibernate.cache.use_second_level_cache: true
-      hibernate.cache.use_query_cache: false
-      hibernate.generate_statistics: false
-      hibernate.cache.region.factory_class: org.hibernate.cache.internal.NoCachingRegionFactory
-      hibernate.jdbc.lob.non_contextual_creation: true
+      hibernate:
+        format_sql: true
 check-user-scopes: false
 signing-key: ewjk@837@$#^.8$
